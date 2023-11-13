@@ -6,21 +6,25 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #c0cbcd;
-    color: #5c3d7e;
 }
+
 
 main {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: #c0cbcd;
+    color: #5c3d7e;
 }
 
 main section {
+    width: 950px;
     margin-bottom: 2rem;
     padding: 2rem;
+    
 }
 
 main h1 {
@@ -38,6 +42,7 @@ div.box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 div.form-wrapper {
@@ -47,7 +52,7 @@ div.form-wrapper {
 div.row {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem 0;
 }
 
 div input,
@@ -55,20 +60,30 @@ div p {
     margin: .2rem;
 }
 
+div input {
+    background-color: #c0cbcd;
+    color: #5c3d7e;
+    padding: .2rem;
+}
+
 div button {
     border-radius: 25px;
     padding: .2rem 1rem;
+    background-color: #c0cbcd;
+    color: #5c3d7e;
+    border: none;
 }
 
 div.ticket-details {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-
+    width: 100%;
     background-color: #c0cbcd;
     color: #5c3d7e;
     height: 8rem;
-    border: 1px solid #5c3d7e;
+    border-radius: 25px;
     padding: 2rem;
     text-align: center;
 }
