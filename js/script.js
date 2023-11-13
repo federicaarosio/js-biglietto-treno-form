@@ -43,4 +43,16 @@ function() {
 
     //carrozza numero
     document.getElementById("wagon").innerHTML = Math.floor(Math.random() * 25);
+
+    //tipologia biglietto
+    const under18 = (passengerAge < 18);
+    const over65 = (passengerAge >= 65);
+
+    if (under18 == true) {
+        document.getElementById("discount").innerHTML = "biglietto minorenni";
+    } else if (over65 == true) {
+        document.getElementById("discount").innerHTML = "biglietto over 65";
+    } else {
+        document.getElementById("discount").innerHTML = "biglietto standard";
+    }
 })

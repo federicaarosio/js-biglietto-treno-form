@@ -33,6 +33,11 @@ div.box {
     background-color: #5c3d7e;
     color: #c0cbcd;
     border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 div.form-wrapper {
@@ -42,6 +47,7 @@ div.form-wrapper {
 div.row {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 div input,
