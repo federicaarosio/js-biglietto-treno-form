@@ -22,7 +22,7 @@ function() {
 
     //calcolo prezzo totale biglietto
     let ticketPrice = parseFloat(userDistance) * 0.1976;
-    console.log(ticketPrice);
+    console.log(ticketPrice); //prezzo senza sconto
 
     //calcolo lo sconto da applicare
     if (passengerAge < 18) {
@@ -31,9 +31,7 @@ function() {
         ticketPrice = ticketPrice - (ticketPrice * 53.27 / 100);
     }
 
-    //scrivo in console l'output
+    //scrivo in console l'output (prezzo finale)
     console.log(ticketPrice);
     
 })
-
-console.log(ticketPrice);

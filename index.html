@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto del treno</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-    
-    <input type="text" id="distance-input">
-    <input type="text" id="passengerAge-input">
-    <button>Invia</button>
+
+<main>
+    <section>
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div class="box">
+            <p>
+                Distanza
+            </p>
+            <input type="text" id="distance-input">
+            <p>
+                Età
+            </p>
+            <input type="text" id="passengerAge-input">
+            <button>Invia</button>
+        </div>
+    </section>
+    <section>
+        <h1>Il tuo biglietto</h1>
+        <div class="box"></div>
+    </section>
+</main>
     
 <!-- Javascript -->
     <script src="./js/script.js"></script>
