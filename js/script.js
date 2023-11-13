@@ -17,8 +17,8 @@ function() {
     //chiedo il numero di km e l'età
     const userDistance = document.getElementById("distance-input").value;
     const passengerAge = document.getElementById("passengerAge-input").value;
-    console.log(userDistance);
-    console.log(passengerAge);
+    console.log("distance in km: " + userDistance);
+    console.log("passenger age: " + passengerAge);
 
     //calcolo prezzo totale biglietto
     let ticketPrice = parseFloat(userDistance) * 0.1976;
@@ -34,4 +34,13 @@ function() {
     //scrivo in console l'output (prezzo finale)
     console.log(ticketPrice);
     
+    //nome del passeggero
+    const nameOnTicket = document.getElementById("name-input").value;
+    document.getElementById("name-surname").innerHTML = nameOnTicket;
+
+    //prezzo biglietto sul ticket con due decimali
+    document.getElementById("price").innerHTML = ticketPrice.toFixed(2) + "€";
+
+    //carrozza numero
+    document.getElementById("wagon").innerHTML = Math.floor(Math.random() * 25);
 })

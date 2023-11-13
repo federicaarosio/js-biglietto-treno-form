@@ -50,20 +50,28 @@ div p {
 }
 
 div button {
-    display: block;
     border-radius: 25px;
     padding: .2rem 1rem;
 }
 
 div.ticket-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
     background-color: #c0cbcd;
     color: #5c3d7e;
     height: 8rem;
     border: 1px solid #5c3d7e;
     padding: 2rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 1rem;
     margin-bottom: .2rem;
+}
+
+h3 {
+    font-size: .9rem;
 }
